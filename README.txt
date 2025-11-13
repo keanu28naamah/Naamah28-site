@@ -1,18 +1,14 @@
-NAAMAH28 Multi‑Page Site
+Mobile-Responsive Update for Naamah28
 
-Pages:
-- index.html (Home)
-- programs.html (Training Programs & Pricing)
-- specializations.html (Weight Loss, Muscle Gain, Mobility/Flexibility, Yoga, Sports-Specific)
-- philosophy.html
-- contact.html (Formspree)
+What changed:
+- Responsive layout with media queries for <=880px and <=480px
+- Navigation wraps and centers on mobile
+- Grids collapse to a single column on small screens
+- Full-width buttons and larger tap targets (min 44px)
+- Hero remains center 80% background position
+- Forms scale for touch ergonomics
 
-Setup:
-1) Ensure your hero image is uploaded to: images/hero.jpg (case-sensitive).
-2) Upload all files to your repo root.
-3) Commit → GitHub Pages updates in ~1–2 minutes.
-
-Notes:
-- Navigation highlights the active tab.
-- Formspree endpoint is wired to /f/xwpakjej with inline success/error message.
-- Styling uses styles.css and your gold-on-black brand palette.
+How to install:
+1) Upload styles.css to your repo root, replacing the old file.
+2) No HTML changes required.
+3) Refresh your site.
