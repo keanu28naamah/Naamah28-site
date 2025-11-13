@@ -1,21 +1,38 @@
-
+/* === Naamah28 Global Styles (Mobile-Responsive) === */
 :root{
   --bg:#0f0f10; --panel:#151517; --text:#f5f6f7; --muted:#b8bbc1;
   --gold:#c8a96a; --line:#232428;
 }
+
 *{box-sizing:border-box}
 html,body{height:100%}
-body{margin:0;background:linear-gradient(180deg,#0e0e10,#111214);color:var(--text);font:16px/1.6 Manrope,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#0e0e10,#111214);
+  color:var(--text);
+  font:16px/1.6 Manrope,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--text);text-decoration:none}
 .container{max-width:1120px;margin:0 auto;padding:0 20px}
 
 /* Header / Nav */
-header{position:sticky;top:0;z-index:40;background:rgba(17,18,20,.75);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line)}
+header{
+  position:sticky;top:0;z-index:40;
+  background:rgba(17,18,20,.75);
+  backdrop-filter:saturate(1.2) blur(10px);
+  border-bottom:1px solid var(--line);
+}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
 .brand{display:flex;align-items:center;gap:12px}
-.brand__mark{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#e7d3a0,var(--gold));box-shadow:0 0 0 1px rgba(255,255,255,.05),0 2px 10px rgba(200,169,106,.35)}
+.brand__mark{
+  width:12px;height:12px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,#e7d3a0,var(--gold));
+  box-shadow:0 0 0 1px rgba(255,255,255,.05),0 2px 10px rgba(200,169,106,.35);
+}
 .brand__name{font-family:"Playfair Display",serif;letter-spacing:.12em;text-transform:uppercase}
-nav ul{list-style:none;display:flex;gap:14px;margin:0;padding:0}
+nav ul{list-style:none;display:flex;gap:14px;margin:0;padding:0;flex-wrap:wrap}
 nav a{padding:9px 12px;border:1px solid transparent;border-radius:999px;transition:.2s transform,.2s background,.2s border}
 nav a:hover{transform:translateY(-1px);background:rgba(200,169,106,.10);border-color:rgba(200,169,106,.30)}
 nav a.active{border-color:rgba(200,169,106,.60);background:rgba(200,169,106,.12)}
@@ -28,21 +45,36 @@ nav a.active{border-color:rgba(200,169,106,.60);background:rgba(200,169,106,.12)
     url('images/hero.jpg') center 80%/cover no-repeat,
     radial-gradient(70% 50% at 50% 0%,rgba(200,169,106,.08),transparent 60%);
 }
-.hero h1{font-family:"Playfair Display",serif;font-size:clamp(36px,5vw,56px);line-height:1.1;margin:0 0 18px}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(32px,6vw,56px);line-height:1.1;margin:0 0 18px}
 .hero p{max-width:720px;color:var(--muted);margin:0 0 28px}
 .badges{display:flex;flex-wrap:wrap;gap:10px}
 .badge{border:1px solid var(--line);background:rgba(255,255,255,.06);padding:8px 12px;border-radius:999px;color:#e9ebee}
 
 /* Sections */
 section{padding:64px 0;border-top:1px solid var(--line)}
-h2{font-family:"Playfair Display",serif;font-size:clamp(26px,3.5vw,36px);margin:0 0 14px}
+h2{font-family:"Playfair Display",serif;font-size:clamp(24px,4vw,36px);margin:0 0 14px}
 .grid{display:grid;gap:20px}
-@media (min-width: 880px){ .grid.cols-2{grid-template-columns:1fr 1fr} .grid.cols-3{grid-template-columns:repeat(3,1fr)} }
+@media (min-width: 880px){
+  .grid.cols-2{grid-template-columns:1fr 1fr}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
 .muted{color:var(--muted)}
 .pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:14px}
+
+/* Pricing & Lists */
+.price{font-size:36px;font-weight:700}
+.price small{font-weight:600;color:var(--muted);font-size:14px}
 .include{display:flex;gap:10px;align-items:flex-start;color:var(--muted)}
-.btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,var(--gold),#b8924c);color:#0b0b0c;border:none;border-radius:12px;padding:12px 16px;font-weight:700;box-shadow:0 6px 18px rgba(200,169,106,.25);transition:.2s transform}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:linear-gradient(180deg,var(--gold),#b8924c);
+  color:#0b0b0c;border:none;border-radius:12px;
+  padding:12px 16px;font-weight:700;
+  box-shadow:0 6px 18px rgba(200,169,106,.25);
+  transition:.2s transform;
+  min-height:44px; /* touch target */
+}
 .btn:hover{transform:translateY(-1px)}
 
 /* Footer */
@@ -53,5 +85,31 @@ footer{padding:56px 0;border-top:1px solid var(--line);color:var(--muted)}
 
 /* Forms */
 form label{display:block;margin:10px 0 6px}
-input, textarea{width:100%;padding:12px 14px;margin:0 0 12px;border-radius:10px;border:1px solid var(--line);background:#0f0f10;color:var(--text)}
+input, textarea{
+  width:100%;padding:12px 14px;margin:0 0 12px;border-radius:10px;
+  border:1px solid var(--line);background:#0f0f10;color:var(--text);
+}
+input{min-height:44px}
+textarea{min-height:120px}
 .notice{display:none;margin-top:12px;font-weight:600;color:var(--gold);text-align:center;}
+
+/* === Mobile Enhancements === */
+@media (max-width: 880px){
+  .container{padding:0 16px}
+  .nav{gap:10px}
+  nav ul{gap:8px;justify-content:center}
+  nav a{padding:10px 12px;font-size:14px}
+  .hero{padding:88px 0 64px}
+  .hero p{max-width:95%}
+  .grid.cols-2,.grid.cols-3{grid-template-columns:1fr}
+  .card{padding:18px}
+  .btn{width:100%} /* full-width buttons on mobile */
+  .badges{gap:8px}
+}
+
+@media (max-width: 480px){
+  nav a{padding:10px 10px;font-size:13px}
+  .hero{padding:72px 0 54px}
+  h2{font-size:clamp(22px,5vw,30px)}
+  .price{font-size:30px}
+}
