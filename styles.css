@@ -42,7 +42,7 @@ nav a.active{border-color:rgba(200,169,106,.60);background:rgba(200,169,106,.12)
   position:relative;padding:118px 0 92px;
   background:
     linear-gradient(180deg,rgba(12,12,12,.70),rgba(12,12,12,.70)),
- url('/images/hero.jpg') center 30%/cover no-repeat,
+ url('/images/hero.jpg') center 10%/cover no-repeat,
     radial-gradient(70% 50% at 50% 0%,rgba(200,169,106,.08),transparent 60%);
 }
 .hero h1{font-family:"Playfair Display",serif;font-size:clamp(32px,6vw,56px);line-height:1.1;margin:0 0 18px}
