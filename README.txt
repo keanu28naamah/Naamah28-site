@@ -5,7 +5,7 @@ What changed:
 - Navigation wraps and centers on mobile
 - Grids collapse to a single column on small screens
 - Full-width buttons and larger tap targets (min 44px)
-- Hero remains center 30% background position
+- Hero remains center 10% background position
 - Forms scale for touch ergonomics
 
 How to install:
